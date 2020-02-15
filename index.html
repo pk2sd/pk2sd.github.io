@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Tax Calculator -- by Prabhat</title>
+        <style>
+            body{
+                text-align: center;
+                font-size: 1.25em;
+            }
+
+            .button {
+                border: 1px solid black;
+                width: 150px;
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                top: 100px;
+            }
+        </style>
+    </head>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="taxCalculator.js"></script>
+    <body>
+        <h1>Tax Calculator</h1>
+        <h3>by Prabhat</h3>
+        Basic salary: &#8377;<input type="number" id="basic"/><br/>
+        Gross income: &#8377;<input type="number" id="gross"/><br/>
+        Actual HRA: &#8377;<input type="number" id="act-hra"/><br/>
+        Standard deductions: &#8377;<input type = "number" value="50000" id="standard_deductions"/><br/>
+        80 C deductions: &#8377;<input type = "number" id="_80cdeductions" value="0"/><br/>
+        Rent: &#8377;<input type="number" id="rent" value="0"/><br/>
+        Taxable income: &#8377;<span id="taxable"></span><br/>
+        HRA exemption: &#8377;<span id="hra"></span><br/>
+        Calculated TAX: &#8377;<span id="final-tax"></span><br/>
+        enable 4% edu cess in new regime: <input type="checkbox" id="cess" checked/><br/>
+        Calculated TAX using new regime(no deductions): &#8377; <span id="new-tax"></span><br/>
+        Change: <span id="change"></span><br/>
+        <div class="button" id="calculate">Calculate</div>
+    </body>
+</html>
